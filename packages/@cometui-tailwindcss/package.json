@@ -5,9 +5,11 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
+    "base": "postcss src/base/*.css --dir dist/base",
     "components": "postcss src/components src/components/**/*.css --base src --dir dist",
-    "build": "postcss dist/base/index.css -o dist/styled.css",
-    "prejss": "prejss-cli dist/styled.css --format commonjs"
+    "styled": "postcss dist/base/index.css -o dist/styled.css",
+    "prejss": "prejss-cli dist/styled.css --format commonjs",
+    "build": "npm run base && npm run components && npm run styled && npm run prejss"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",

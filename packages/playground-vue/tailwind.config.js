@@ -3,7 +3,5 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   plugins: [require("../@cometui-tailwindcss")],
-  cometui: {
-    theme: "default",
-  },
+  cometui: {},
 };
