@@ -1,0 +1,12 @@
+@import '@/styles/utils/_variables.scss';
+@import '@/styles/utils/_mixins.scss';
+@import '@/styles/utils/_typography.scss';
+@import '@/styles/utils/_components.scss';
+
+body{
+    @apply bg-[$primary]
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

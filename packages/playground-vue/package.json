@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@cometui/tailwindcss": "^1.0.0",
+    "sass": "^1.56.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
