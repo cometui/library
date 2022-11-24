@@ -1,9 +1,6 @@
 import type { Plugin } from "vue";
-type Theme = "google" | "default";
 
-interface PluginOptions {
-  theme: Theme;
-}
+interface PluginOptions {}
 
 import Button from "../components/Button/index";
 
