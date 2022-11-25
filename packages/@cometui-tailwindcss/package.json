@@ -1,0 +1,28 @@
+{
+  "name": "@cometui/tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "base": "postcss src/base/*.css --dir dist/base",
+    "components": "postcss src/components src/components/**/*.css --base src --dir dist",
+    "styled": "postcss dist/base/index.css -o dist/styled.css",
+    "prejss": "prejss-cli dist/styled.css --format commonjs",
+    "build": "npm run base && npm run components && npm run styled && npm run prejss"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}
